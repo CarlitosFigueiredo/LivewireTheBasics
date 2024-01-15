@@ -8,6 +8,9 @@
 
     </head>
     <body >
-       <livewire:hello-word />
+
+        {{-- <livewire:hello-word /> --}}
+       <livewire:counter />
+
     </body>
 </html>
