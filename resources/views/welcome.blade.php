@@ -11,16 +11,6 @@
 
 <body>
 
-    <livewire:hello-word />
-
-    <hr>
-
-    <livewire:counter />
-
-    <hr>
-
-    <livewire:todos />
-
 </body>
 
 </html>
