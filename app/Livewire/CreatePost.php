@@ -15,7 +15,6 @@ class CreatePost extends Component
     #[Rule('required',)]
     public $content = '';
 
-
     public function save()
     {
         $this->validate();
@@ -26,7 +25,7 @@ class CreatePost extends Component
         ]);
 
         $this->reset(['title', 'content']);
-        $this->redirect('/posts');
+        $this->redirect('/posts', navigate: true);
     }
 
     public function render()
