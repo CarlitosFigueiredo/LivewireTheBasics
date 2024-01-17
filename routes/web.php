@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Livewire\CreatePost;
 use App\Livewire\ShowPosts;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/posts', ShowPosts::class);
+Route::get('/posts/create', CreatePost::class);
