@@ -3,6 +3,11 @@
         New Post:
     </h2>
 
+    <span>Current Title: <span x-text="$wire.title"></span> </span>
+    <button x-on:click="$wire.title = ''">
+        Clear Title
+    </button>
+
     <form wire:submit="save">
         <label>
             <span>Title</span>
@@ -15,6 +20,18 @@
         <label>
             <span>Content</span>
             <textarea wire:model="content"></textarea>
+
+            <small>
+                Characters:
+
+                <span x-text="$wire.content.length"></span>
+            </small>
+            <small>
+                Words:
+
+                <span x-text="$wire.content.split(' ').length -1"></span>
+            </small>
+
             @error('content')
                 <em>{{ $message }}</em>
             @enderror
