@@ -19,4 +19,10 @@ class Post extends Model
         'content',
         'is_archived',
     ];
+
+    public function archive()
+    {
+        $this->is_archived = true;
+        $this->save();
+    }
 }
