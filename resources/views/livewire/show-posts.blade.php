@@ -9,10 +9,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Post title</td>
-                <td>Post content...</td>
-            </tr>
+            @foreach ($posts as $post)
+                <tr>
+                    <td>Post title</td>
+                    <td>Post content...</td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
 </div>
